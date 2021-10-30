@@ -64,10 +64,13 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* details */
 
-.details .left,
 .details .middle,
 .details .right{
     padding: 10px;
+}
+
+.details .left{
+    padding-bottom: 10px;
 }
 
 .details .square{
