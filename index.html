@@ -1,369 +1,389 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Mark Jason Espelita">
-    <meta name="title" content="Mark Jason Espelita Web Development">
-    <meta name="keywords" content="web design, web development, social media marketing, laravel, laravel livewire">
-    <meta name="description" content="I am 24 years of age, I reside in Brgy. Salvacion, San Isidro, Northern Samar, Philippines. As a seasoned fullstack web developer, I possess proficiency in programming languages such as PHP and JavaScript, alongside frameworks like Laravel, complemented by expertise in Laravel Livewire. Furthermore, I boast extensive experience in content management systems such as WordPress (utilizing Elementor), GoHighLevel web and funnel builder, ClickFunnels, and Hubspot.">
-    <link rel="icon" href="./assets/logo-192x192.png">
-    <title>Mark Jason Espelita</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <style>
-        /* Adjust sidebar width */
-        .sidebar {
-            width: 200px;
-            /* position: fixed; */
-            min-height: 100vh;
-            color: #fff;
-            padding-top: 15px;
-            /* overflow-y: scroll; */
-  position: fixed;
-  /* z-index: 1; */
-  top: 0;
-  left: 0;
-        }
-
-        .black{
-            background: linear-gradient(to right, #000428, #004e92)
-        }
-
-        /* Set sidebar background color */
-        .sidebar a {
-            padding: 10px;
-            text-decoration: none;
-            color: #fff;
-            display: block;
-        }
-
-        .sidebar a:hover {
-            background-color: #495057;
-        }
-
-        /* Content */
-        /* .content {
-            margin-left: 0;
-            padding: 20px;
-        } */
-    </style>
+    <meta name="author" content="Mark Jason Penote Espelita">
+    <meta name="keywords" content="web development, website, freelancer, PWA Development">
+    <meta name="description" content="A self-taught full stack web developer (HTML, CSS, JS/JQuery, PHP, MySQL) for more than one year since June 2020 up to present, from San Isidro,
+    Northern Samar Philippines. Specialized in web development from frontend (client side), backend (server side) and databases and transforming web apps into an installable
+    application on mobile devices and desktop computers by adding unique features such as offline fuctionalities, caching, adding application meta data such as icons,
+    app name, app description and more.">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./libraries/bootstrap/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./libraries/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/brands.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/regular.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/solid.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/svg-with-js.min.css">
+    <link rel="stylesheet" href="./libraries/fontawesome/css/v4-shims.min.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./libraries/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./libraries/OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./libraries/OwlCarousel/dist/assets/owl.theme.green.min.css">
+    <!-- manifest -->
+    <link rel="manifest" href="./manifest.json">
+    <!-- icon -->
+    <link rel="icon" href="./logobig.png">
+    <!-- custom -->
+    <link rel="stylesheet" href="./custom.css">
+    <title>MJ Web Design and Development</title>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-2 p-0 black">
-                <!-- Sidebar -->
-                <div class="sidebar d-none d-lg-block">
-                    <div class="container">
-                        <img src="./assets/logo-192x192.png" alt="" width="30%" style="margin: auto; border-radius: 50%;">
-                        <h5 class="mt-3">My Projects</h5>
-                        <a href="./index.html">Home</a>
-                        <a href="./hosted-projects.html">Hosted Projects</a>
-                        <a href="./local-projects.html">Local Projects</a>
-                        <a href="./location.html">My Location</a>
-                    </div>
+
+    <section class="showcase">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 showcasecenter">
+                    <h1>Hi I am <span class="gold">Mark</span>!</h1><br>
+                    <p>A fullstack web and progressive web apps (PWA's) developer.</p>
+                    <a href="#projects">
+                        <button class="btn">See My Works</button>
+                    </a>
+                    <p>
+                        <a href="mailto:markjasonespelita@gmail.com">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="tel:09978972884">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                        <a href="sms:09978972884">
+                            <i class="fa fa-mobile"></i>
+                        </a>
+                        <a href="http://m.me/100009131763374">
+                            <i class="fa fa-comment"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100009131763374">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </p>
                 </div>
             </div>
-            <div class="col-lg-10 col-md-12 p-0">
-                <!-- Page content -->
-                <div class="content">
-                    <!-- Navigation menu -->
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <div class="container">
-                            <a class="navbar-brand" href="#">Mark Jason Espelita</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="location.html">My Location</a>
-                                    </li>
-                                </ul>
-                                <!-- Sidebar items in dropdown for mobile view -->
-                                <ul class="navbar-nav ml-auto d-lg-none">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Sidebar Items
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="./hosted-projects.html">Hosted Projects</a>
-                                            <a class="dropdown-item" href="./local-projects.html">Local Projects</a>
-                                            <!-- <a class="dropdown-item" href="#">Hobbies</a>
-                                            <a class="dropdown-item" href="#">Personal Frameworks and Starter Kits</a> -->
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+        </div>
+    </section>
+
+    <section class="details">
+        <div class="container">
+            <div class="row">
+                <!-- left -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 left">
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>HTML5</b>
                         </div>
-                    </nav>
-    
-                    <!-- Page content area -->
-                    <div class="container py-4">
-                        <section>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-12 col-md-12">
-                                        <h1>Hello, I am Mark Jason!</h1>
-        
-                                        <p>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>CSS3</b>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>Javascript</b>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>PHP</b>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>JQuery</b>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>Bootstrap</b>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>MySQL</b>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>CodeIgniter</b>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 square">
+                            <b>Brain.js</b>
+                        </div>
+                    </div>
+                </div>
+                <!-- middle -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 img middle">
+                    <img src="./img/new.jpg" alt="">
+                </div>
+                <!-- right -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 right">
+                    <b class="gold">Mark Jason Penote Espelita</b>
+                    <p class="desc">A 22 years old self-taught full stack web developer (HTML, CSS, JS/JQuery, PHP, MySQL) for more than one year since June 2020 up to present, from San Isidro,
+                        Northern Samar Philippines. Specialized in web development from frontend (client side), backend (server side) and databases and transforming web apps into an installable
+                        application on mobile devices and desktop computers by adding unique features such as offline fuctionalities, caching, adding application meta data such as icons,
+                        app name, app description and more.</p>
+                    <a href="./resume.pdf">
+                        <button class="btn"><i class="fa fa-eye"></i> See My Resume</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                            I am 24 years of age, I reside in Brgy. Salvacion, San Isidro, Northern Samar, Philippines. 
-                                            As a seasoned fullstack web developer, I possess proficiency in programming languages such as <b>PHP</b> and <b>JavaScript</b>, 
-                                            alongside frameworks like <b>Laravel</b>, complemented by expertise in <b>Laravel Livewire</b>. 
-                                            Furthermore, I boast extensive experience in content management systems such as <b>WordPress (utilizing Elementor)</b>, <b>GoHighLevel</b> web and funnel builder, <b>ClickFunnels</b>, and <b>Hubspot</b>.
-                                        </p>
-
-                                        <p>
-                                            <a href="tel:09978972884"><button class="btn btn-info m-1">Call Me</button></a>
-                                            <a href="sms:09978972884"><button class="btn btn-warning m-1">Text Me</button></a>
-                                            <a href="mailto:markjasonespelita@gmail.com"><button class="btn btn-success m-1">Email Me</button></a>
-                                            <a href="https://www.facebook.com/profile.php?id=100009131763374"><button class="btn btn-primary m-1">See My FB Profile</button></a>
-                                            <a href="https://m.me/100009131763374"><button class="btn btn-danger m-1">Chat Me On Messenger</button></a>
-                                            <a href="./hosted-projects.html">
-                                                <button class="m-1" style="background: linear-gradient(to right, #3a1c71, #000000); border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 12px; cursor: pointer;">
-                                                    My Hosted/Live Projects
-                                                </button>
-                                            </a>
-                                            <a href="./local-projects.html">
-                                                <button class="m-1" style="background: linear-gradient(to right, #000428, #004e92); border: none; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 12px; cursor: pointer;">
-                                                    My Local/Hobby Projects
-                                                </button>
-                                            </a>
-                                        </p>
-
-                                        <p>
-                                            It has been <b>4 years</b> since I embarked on my journey in web development, commencing on June 24, 2020, within the confines of the first IT company where I found employment. Allow me to recount how this journey unfolded.                                        </p>
-                                    </div>
-                                    <div class="col-lg-6 col-sm-12 col-md-12">
-                                        <img src="./assets/404779794_1025114575363211_2515107521754575252_n.jpg" width="100%" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        
-
-                        
-                        <section class="py-3">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>2016 - 2017</h4>
-                                                <small>(Educational Attainment)</small>
-                                                <p>
-                                                    <b>Grade 11 ICT</b> Senior High School and I had no idea what I am doing. :)
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>2017 - 2018</h4>
-                                                <small>(Educational Attainment)</small>
-                                                <p>
-                                                    <b>Grade 12 ICT</b>. C++ sucks but I love web development - HTML and CSS.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>2018 - 2019</h4>
-                                                <small>(Educational Attainment)</small>
-                                                <p>
-                                                    <b>1st year college</b>. IT course hated me so I chose <b>BS Entrepreneurship</b>.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>2019 - Mar. 2020</h4>
-                                                <small>(Educational Attainment)</small>
-                                                <p>
-                                                    <b>2nd year of college</b>, when COVID made classes online only, I went home. Instead of focusing on college, I got really into learning web development. I got so into it that I ended up <b>dropping out</b> of college.                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>June 24, 2020</h4>
-                                                <p>
-                                                    The magic happened at <b>Qonvex Technology</b>, an IT company that organized a <b>web development bootcamp</b>. I decided to join in. Out of over 20 people in the bootcamp, only 5 of us made it through, and I was one of them.                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="py-3">
-                            <div class="container">
-                                <h4>My Work Experiences</h4>
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>June 2020 - Jan. 2021</h4>
-                                                <p>
-                                                    So I was hired...<br>
-                                                    <b>Qonvex Technology</b> <br>
-                                                    <small><b>Type:</b> Web and Mobile Apps Development Company.</small> <br>
-                                                    <small><b>Position:</b> Junior Front End Web Developer.</small> <br>
-                                                    <small><b>Location:</b> Brgy. Obrero, Calbayog City Eastern Samar.</small> <br>
-                                                    <small><b>Experience:</b> 7 months</small> <br>
-                                                    <small><a href="https://qonvextechnology.com">https://qonvextechnology.com</a></small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>Jan. 2021 - Jan. 2022</h4>
-                                                <p>
-                                                    I continue college. Just kidding. LOL<br>
-                                                    <b>Freelancing / Self Study</b> <br>
-                                                    <small><b>Type:</b> Fullstack Laravel + Vue and everything.</small> <br>
-                                                    <small><b>Position:</b> Freelance Web Developer.</small> <br>
-                                                    <small><b>Location:</b> Brgy. Salvacion San Isidro, Northern Samar.</small> <br>
-                                                    <small><b>Experience:</b> 1 year</small> <br>
-                                                    <small><a href="https://markjason.netlify.app">https://markjason.netlify.app</a></small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>Jan. 2022 - Jan. 2023</h4>
-                                                <p>
-                                                    I worked in a super market.<br>
-                                                    <b>Sanvic Supermart Incorporated</b> <br>
-                                                    <small><b>Type:</b> Wholesale and Retail Store.</small> <br>
-                                                    <small><b>Position:</b> Warehouse Checker - Stock Database Monitoring.</small> <br>
-                                                    <small><b>Location:</b> Brgy. Dalakit, Catarman Northern Samar.</small> <br>
-                                                    <small><b>Experience:</b> 1 year</small> <br>
-                                                    <small><a href="https://facebook.com/sanvic.supermart">https://facebook.com/sanvic.supermart</a></small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h4>Jan. 2023 - Present Day</h4>
-                                                <p>
-                                                    And here we are, today.<br>
-                                                    <b>Mediva Digital Co.</b> <br>
-                                                    <small><b>Type:</b> Digital Marketing Agency.</small> <br>
-                                                    <small><b>Position:</b> Senior Fullstack Web Developer.</small> <br>
-                                                    <small><b>Location:</b> Brgy. Molave, Catarman Northern Samar.</small> <br>
-                                                    <small><b>Experience:</b> 1 year and ongoing...</small> <br>
-                                                    <small><a href="https://medivadigital.com">https://medivadigital.com</a></small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="py-3">
-                            <div class="container">
-                                <h4>My Skills</h4>
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5>Technical (Programming/Web Development) Skills</h5>
-                                                <p>
-                                                    - Laravel v11.x <br>
-                                                    - Laravel Livewire v3.x <br>
-                                                    - Vue JS (30%) <br>
-                                                    - React JS (10%) <br>
-                                                    - Alpine JS on Livewire <br>
-                                                    - MySQL Database <br>
-                                                    - SQLite <br>
-                                                    - Wordpress Elementor and Divi Builders <br>
-                                                    - GohighLevel Web and Funnel Builder <br>
-                                                    - Hubspot <br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5>Technical (Non - Programming) Skills</h5>
-                                                <p>
-                                                    - Microsoft Word <br>
-                                                    - Microsoft Excel <br>
-                                                    - Microsoft Powerpoint <br>
-                                                    - Simple Hardware Troubleshooting <br>
-                                                    - LAN Network Troubleshooting <br>
-                                                    - Database Management <br>
-                                                    - Office Related Works <br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-12 col-md-6 p-2">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5>Non Technical Skills / Soft Skills</h5>
-                                                <p>
-                                                    - I love learning new things. <br>
-                                                    - Attention to detail. <br>
-                                                    - Can work with minimum supervision and produce high quality output. <br>
-                                                    - Compassionate. <br>
-                                                    - Willing to learn and to teach. <br>
-                                                    - Introverted (Silent). <br>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <div class="container">
-                                <p>
-                                    <b>My Old Portfolios</b> <br>
-                                    <a href="https://markjason.netlify.app">https://markjason.netlify.app</a>  - Published on Oct 30, 2021.<br>
-                                    <a href="https://webiapp.netlify.app">https://webiapp.netlify.app</a>  - Published on Apr 8, 2021.<br>
-                                    <a href="https://mjstaticsites.netlify.app">https://mjstaticsites.netlify.app</a>  - Published on Oct 13, 2020.<br>
-                                </p>
-
-                                <p>
-                                    <b>My Github Accounts</b> <br>
-                                    <a href="https://github.com/24377965mjGithub">https://github.com/24377965mjGithub</a><br>
-                                    <a href="https://github.com/mjfrontendservices">https://github.com/mjfrontendservices</a><br>
-                                </p>
-                            </div>
-                        </section>
+    <section class="skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <div class="skill">
+                        <i class="fa fa-paint-brush"></i><br>
+                        <h3><span class="gold">Front End</span> Web Development</h3>
+                        <p>I build front end user interfaces and web application's physical appearance/interactive UI's where users can interact with your application.
+                            (HTML, CSS, Bootstrap, Javascript/JQuery)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <div class="skill">
+                        <i class="fa fa-cloud"></i><br>
+                        <h3><span class="gold">Back End</span> Web Development</h3>
+                        <p>I'm specialized in server side development in PHP programming language, Codeigniter a PHP Framework, database (MySQL) communication, data processing and more.
+                            (PHP)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <div class="skill">
+                        <i class="fa fa-mobile"></i><br>
+                        <h3><span class="gold">Progressive Web App</span> for Mobile</h3>
+                        <p>
+                            Progressive web app for mobile is an application specific for mobile platforms that is built using web standard technologies (HTML, CSS, JS, PHP) that can be install on mobile devices and cross platform with a single codebase and it will function like a normal mobile app that is installed on your phone.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <div class="skill">
+                        <i class="fa fa-desktop"></i><br>
+                        <h3><span class="gold">Progressive Web App</span> for Desktop</h3>
+                        <p>
+                            Similar to PWA for mobile, PWA for desktop is also an application that is specific on desktop computers and laptops that is built using web standard technologies (HTML, CSS, JS, PHP) that can be install on desktop devices and cross platform with a single codebase and it will function like a normal desktop or laptop app that is installed on your computer.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <div class="skill">
+                        <i class="fa fa-database"></i><br>
+                        <h3>Relational <span class="gold">Databases</span></h3>
+                        <p>I design relational database relationship (database modeling) in small or even large applications. Efficient in SQL complex queries and data management.
+                            (MySQL Workbench - for database design)
+                            (SQL - Structured Query Language)</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <div class="skill">
+                        <i class="fa fa-globe"></i><br>
+                        <h3><span class="gold">Responsive</span> Websites</h3>
+                        <p>
+                            Responsive websites are web applications that are flexible and will fit on any screen (mobile and desktop). Uses media queries to adopt on any screens no matter what size it is.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Bootstrap JS and jQuery (optional) -->
-    <script src="./slim.min.js"></script>
-    <script src="./jquery.slim.popper.min.js"></script>
-    <script src="./bootstrap.min.js"></script>
+    <section id="projects">
+        <div class="container">
+            <h3>Projects Made - 15</h3>
+            <p>Here are my small side projects for over one and half year of self learning web development and PWA development. Some of them are hosted, some are not. Click the link to visit each project.</p>
+            <div class="owl-carousel">
+                <div class="item">
+                    <div>
+                        <img src="./img/dixie1.PNG" alt=""><br>
+                        <h2>Dixie Chatbot</h2>
+                        <a href="https://mjdixie.netlify.app">https://mjdixie.netlify.app</a>
+                        <p>
+                            Dixie is a simple yet functional chatbot trained with small amount of data using Javascript (Brain.js). Its purpose is to be my personal assistant. She can schedule my task and more.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/cov1.PNG" alt=""><br>
+                        <h2>Covid19 Predictor</h2>
+                        <a href="https://covidsymps.netlify.app">https://covidsymps.netlify.app</a>
+                        <p>
+                            A progressive web app system that can diagnose patients that has symptoms from virus and predict if that patient is positive or negative from COVID19 virus, uses machine learning.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/todo1.PNG" alt=""><br>
+                        <h2>Todo List</h2>
+                        <a href="https://apptodoinstall.netlify.app">https://apptodoinstall.netlify.app</a>
+                        <p>
+                            A lightweight progressive web application Todo List. You can easily organize your tasks. Installable like a normal mobile or desktop application and uses browser's memory cache and localstorage API for offline capabilities.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/enventa1.PNG" alt=""><br>
+                        <h2>Enventa Static Site</h2>
+                        <a href="https://enventa.netlify.app">https://enventa.netlify.app</a>
+                        <p>
+                            A single page static website, serverless ecommerce site. Designed for mobile views. (Responsive Website)
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/spr1.PNG" alt=""><br>
+                        <h2>Somoray Park And Resort</h2>
+                        <a href="https://somorayparkandresort.netlify.app/">https://somorayparkandresort.netlify.app/</a>
+                        <p>
+                            A static website of a park and resort located in Bobon, Northern Samar.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/mjh1.PNG" alt=""><br>
+                        <h2>MJ The Handsome</h2>
+                        <a href="https://mjthehandsome.netlify.app/">https://mjthehandsome.netlify.app/</a>
+                        <p>
+                            A single page static website. Static website blog.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/mms1.PNG" alt=""><br>
+                        <h2>MJ Mini Store</h2>
+                        <a href="https://mjministore.netlify.app/">https://mjministore.netlify.app/</a>
+                        <p>
+                            A well designed responsive ecommerce front end. Designed for ecommerce sites.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/mark1.PNG" alt=""><br>
+                        <h2>MJ Static Sites</h2>
+                        <a href="https://mjstaticsites.netlify.app/">https://mjstaticsites.netlify.app/</a>
+                        <p>
+                            My old freelance portfolio, when I knew only front end web development.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/c1.PNG" alt=""><br>
+                        <h2>CheMJ</h2>
+                        <p>(not hosted yet)</p>
+                        <p>
+                            Static website I built for my friend who sells alchohol.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/barato2.PNG" alt=""><br>
+                        <h2>Barato Buy And Sell</h2>
+                        <p>(not hosted yet)</p>
+                        <p>
+                            A buy and sell web application made using HTML, CSS, Javascript and PHP. (Homepage)
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/chatmev2.PNG" alt=""><br>
+                        <h2>Chat Me Version 2</h2>
+                        <p>(not hosted yet)</p>
+                        <p>
+                            The first successfull chat system I've made in PHP. (Homepage)
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/mjchatbot2.PNG" alt=""><br>
+                        <h2>MJ Chatbot</h2>
+                        <p>(not hosted yet)</p>
+                        <p>
+                            The first successful automated, explicitly programmed personal chatbot (Conversation page)
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/np1.PNG" alt=""><br>
+                        <h2>Notipy</h2>
+                        <p>(not hosted yet)</p>
+                        <p>
+                            Complete CRUD (Create, Retrieve/Read, Update, Delete) note application (Homepage)
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/pc2.PNG" alt=""><br>
+                        <h2>Professional Chat</h2>
+                        <p>(not hosted yet)</p>
+                        <p>
+                            Personal best chat system using PHP and MySQL database. Can send files(audio, video, pdf's and other documents) and can play audios and videos through chat. (Home page)
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="./img/ventahan.PNG" alt=""><br>
+                        <h2>Ventahan Buy And Sell</h2>
+                        <p>(not hosted yet)</p>
+                        <p>
+                            A simple functional buy and sell progressive web application where user can post and sell thier stuff. With direct contact to the seller in just one click.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <h4>Quick Contact</h4>
+                    <p>Tap the button to reach me.</p>
+                    <a href="mailto:markjasonespelita@gmail.com">
+                        <button class="btn btn-danger"><i class="fab fa-google"></i>  Email me</button>
+                    </a>
+                    <a href="tel:09978972884">
+                        <button class="btn btn-info"><i class="fa fa-phone"></i> Call Me</button>
+                    </a>
+                    <a href="sms:09978972884">
+                        <button class="btn btn-success"><i class="fa fa-sms"></i> Message me</button>
+                    </a>
+                    <a href="http://m.me/100009131763374">
+                        <button class="btn btn-warning"><i class="fa fa-comment"></i>  Go to my Messenger</button>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100009131763374">
+                        <button class="btn btn-light"><i class="fab fa-facebook"></i>  Visit my FB Profile</button>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 square">
+                    <h4>Where am I?</h4>
+                    <b>
+                        <i class="fa fa-map-marker"></i> Brgy. Salvacion San Isidro Northern Samar, Philippines
+                    </b>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="./libraries/jquery/jquery.js"></script>
+    <!-- bootstrap -->
+    <script src="./libraries/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./libraries/bootstrap/bootstrap.min.js"></script>
+    <!-- owl carousel -->
+    <script src="./libraries/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <!-- sw registration -->
+    <script src="./swr.js"></script>
+    <script src="./custom.js"></script>
 </body>
+
 </html>
